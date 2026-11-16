@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tigerpixel Ltd – App Design and Development</title>
+<meta name="description" content="Tigerpixel Ltd designs and develops mobile apps.">
+<style>
+:root{--ink:#1d1d1f;--muted:#5f6368;--accent:#e8710a;--bg:#fbfaf8;--line:#e6e2dc}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+header{padding:28px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-weight:700;font-size:1.25rem;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+.logo span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.hero{padding:88px 0 64px}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:0 0 16px;letter-spacing:-.02em}
+.lead{font-size:1.2rem;color:var(--muted);margin:0;max-width:34em}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin:0 0 12px}
+a{color:var(--accent)}
+footer{padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">Tiger<span>pixel</span></a>
+    <nav><a href="#about">About</a><a href="#contact">Contact</a><a href="/privacy.html">Privacy</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <h1>App design and development</h1>
+    <p class="lead">Tigerpixel Ltd designs, builds and publishes mobile apps.</p>
+  </div>
+  <section id="about">
+    <h2>About</h2>
+    <p>Tigerpixel Ltd is a UK company specialising in app design and development. We create apps for Android and other platforms, taking them from first idea through design and build to release.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For enquiries or support, email <a href="mailto:liam@tigerpixel.com">liam@tigerpixel.com</a>.</p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">&copy; <span id="y">2026</span> Tigerpixel Ltd. All rights reserved. &middot; <a href="/privacy.html">Privacy policy</a></div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
